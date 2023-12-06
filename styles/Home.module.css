@@ -3,7 +3,7 @@
       transform: rotate(0deg);
     }
     50% {
-      transform: rotate(20deg); /* Adjust the rotation angle */
+      transform: rotate(20deg); 
     }
     100% {
       transform: rotate(0deg);
@@ -15,5 +15,5 @@
   }
   
   .arrow {
-    animation: rotateArrow 2s infinite; /* Adjust the duration of the animation */
+    animation: rotateArrow 2s infinite; 
   }
