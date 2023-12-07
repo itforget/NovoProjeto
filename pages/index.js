@@ -27,12 +27,7 @@ export default function Home() {
      <br/>, "I`m a " , <span className='text-[#6655a1] underline'>future</span>, " developer", <br/>,
       "Based in ",<span className='text-[#6655a1] underline'>Brasilia, Brazil.</span>]
 
-  const texto3 = "SOBRE"
-  const texto4 = "ABOUT"
-  const texto5 = "PROJETOS"
-  const texto6 = "PROJECTS"
-  const texto7 = "CONTATO"
-  const texto8 = "CONTACT"
+  const textos = ["SOBRE", "ABOUT", "PROJETOS", "PROJECTS", "CONTATO", "CONTACT"]
   
   const alternarTexto = () => {
     setMostrarPrimeiroTexto(!mostrarPrimeiroTexto);
@@ -50,10 +45,10 @@ export default function Home() {
           </label>
           <span>ENG</span>
           </div>
-          <a className='hover:opacity-50 border-[#96a7a4] border-2 rounded-xl p-2 text-[#96a7a4]' href='#SOBRE'>{mostrarPrimeiroTexto ? texto3 : texto4}</a>
-          <a className='hover:opacity-50 border-[#96a7a4] border-2 rounded-xl p-2 text-[#96a7a4]' href='#PROJETOS'>{mostrarPrimeiroTexto ? texto5 : texto6}</a>
+          <a className='hover:opacity-50 border-[#96a7a4] border-2 rounded-xl p-2 text-[#96a7a4]' href='#SOBRE'>{mostrarPrimeiroTexto ? textos[0] : textos[1]}</a>
+          <a className='hover:opacity-50 border-[#96a7a4] border-2 rounded-xl p-2 text-[#96a7a4]' href='#PROJETOS'>{mostrarPrimeiroTexto ? textos[2] : textos[3]}</a>
           <a className='border-[#6655a1] border-2 rounded-xl p-2 text-[#6655a1] hover:opacity-50' href='mailto:italcordeiro.s@gmail.com'>
-          {mostrarPrimeiroTexto ? texto7 : texto8}
+          {mostrarPrimeiroTexto ? textos[4] : textos[5]}
           </a>
         </div>
       </div>
