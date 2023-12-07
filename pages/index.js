@@ -40,7 +40,7 @@ export default function Home() {
               </label>
             <span>ENG</span>
           </div>
-          <div className='flex gap-5 ml-[50px]'>
+          <div className='flex gap-5 ml-[60px]'>
           <a className='hover:opacity-50 border-[#96a7a4] border-2 rounded-xl p-2 text-[#96a7a4]' href='#SOBRE'>{mostrarPrimeiroTexto ? textos[0] : textos[1]}</a>
           <a className='hover:opacity-50 border-[#96a7a4] border-2 rounded-xl p-2 text-[#96a7a4]' href='#PROJETOS'>{mostrarPrimeiroTexto ? textos[2] : textos[3]}</a>
           <a className='border-[#6655a1] border-2 rounded-xl p-2 text-[#6655a1] hover:opacity-50' href='mailto:italcordeiro.s@gmail.com'>{mostrarPrimeiroTexto ? textos[4] : textos[5]}
