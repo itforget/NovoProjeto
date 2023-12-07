@@ -23,9 +23,9 @@ export default function Home() {
     "Morando em ",<span className='text-[#6655a1] underline'>Brasilia, Brasil.</span> ]
 
   const texto2 = [
-    "Hello,", <br/>, "my name is ",  <span className='text-[#6655a1] underline'>Ítalo Cordeiro</span>,
-     <br/>, "i`m a " , <span className='text-[#6655a1] underline'>future</span>, " developer", <br/>,
-      "based in ",<span className='text-[#6655a1] underline'>Brasilia, Brazil.</span>]
+    "Hello,", <br/>, "My name is ",  <span className='text-[#6655a1] underline'>Ítalo Cordeiro</span>,
+     <br/>, "I`m a " , <span className='text-[#6655a1] underline'>future</span>, " developer", <br/>,
+      "Based in ",<span className='text-[#6655a1] underline'>Brasilia, Brazil.</span>]
 
   const texto3 = "SOBRE"
   const texto4 = "ABOUT"
@@ -63,13 +63,13 @@ export default function Home() {
         {mostrarPrimeiroTexto ? texto1 : texto2}
         </h1>
         <div className='flex flex-row gap-8'>
-          <a href='#nao'>
+          <a href='#'>
             <Image className='w-[70px] hover:opacity-50' src={IconInstagram} />
           </a>
-          <a href='#nao'>
+          <a href='https://github.com/itforget'target='_blank'>
             <Image className='w-[70px] hover:opacity-50' src={IconGithub} />
           </a>
-          <a href='#nao'>
+          <a href='https://www.linkedin.com/in/%C3%ADtalo-cordeiro-238a4a21a/' target='_blank'>
             <Image className='w-[70px] hover:opacity-50' src={IconLinkedin} />
           </a>
         </div>
