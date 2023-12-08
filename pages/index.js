@@ -1,18 +1,16 @@
-import Logo from '/public/images/logo.png';
 import Image from 'next/image';
 import IconInstagram from '/public/images/instagram.png';
 import IconGithub from '/public/images/github.png';
 import IconLinkedin from '/public/images/linkedin.png';
 import Arrow from '/public/images/computer.png';
 import React, { useState } from 'react';
-import Sobre from './sobre';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Nav from './components/Nav'
 
-
-
-export default function Home() {
+export default function Sobre() {
   const [mostrarPrimeiroTexto, setMostrarPrimeiroTexto] = useState(true);
-
+  const alternarTexto = () => {
+      setMostrarPrimeiroTexto(!mostrarPrimeiroTexto);
+};
   const texto1 = [
     "Olá,",<br/>, "Meu nome é ", <span className='text-[#6655a1] underline'>Ítalo Cordeiro</span>,
    <br/>, "Sou um ", <span className='text-[#6655a1] underline'>futuro</span>, " Desenvolvedor", <br/>,
@@ -23,35 +21,9 @@ export default function Home() {
      <br/>, "I`m a " , <span className='text-[#6655a1] underline'>future</span>, " developer", <br/>,
       "Based in ",<span className='text-[#6655a1] underline'>Brasilia, Brazil.</span>]
 
-  const textos = ["SOBRE", "ABOUT", "PROJETOS", "PROJECTS", "CONTATO", "CONTACT"]
-  
-  const alternarTexto = () => {
-    setMostrarPrimeiroTexto(!mostrarPrimeiroTexto);
-  };
   return (
     <div className='box-border'>
-      <div className='bg-[#062C26] flex flex-wrap items-center justify-between md:justify-center' >
-      <div className='animate-pulse'>
-      <Image className='w-[120px] ml-6' src={Logo} alt='logo' />
-      </div>
-        <div className='flex flex-wrap items-center gap-[80px] text-lg font-bold text-[#96a7a4] mr-[80px]'>
-          <div className='border-[#96a7a4] border-2 rounded-xl p-2 text-[#96a7a4] flex gap-2 ml-[50px]  '>
-            <span>PT-BR</span>
-              <label className="switch">
-                <input type="checkbox" value="Alternar Texto" onClick={alternarTexto} />
-                <span className="slider round"></span>
-              </label>
-            <span>ENG</span>
-          </div>
-          <div className='flex gap-5 ml-[50px] '>
-          <a className='hover:opacity-50 border-[#96a7a4] border-2 rounded-xl p-2 text-[#96a7a4]'>{mostrarPrimeiroTexto ? textos[0] : textos[1]}</a>
-          <a className='hover:opacity-50 border-[#96a7a4] border-2 rounded-xl p-2 text-[#96a7a4]' href='#PROJETOS'>{mostrarPrimeiroTexto ? textos[2] : textos[3]}</a>
-          <a className='border-[#6655a1] border-2 rounded-xl p-2 text-[#6655a1] hover:opacity-50' href='mailto:italcordeiro.s@gmail.com'>{mostrarPrimeiroTexto ? textos[4] : textos[5]}
-          </a>
-
-          </div>
-        </div>
-      </div>
+      <Nav />
       <div className="flex flex-col flex-wrap justify-center place-content-center bg-[#1A533F]  my-2 p-5 rounded-[120px] md:rounded-none">
         <Image className='w-[50px] animate-bounce' src={Arrow} />
         <h1 className=' text-[#96a7a4] text-[100px] md:text-5xl md:tracking-wide md:leading-[80px] md:text-center'>
