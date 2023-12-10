@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Nav from './components/Nav'
-import { Code, CodeBrackets, CodeBracketsSquare, Css3, Html5 } from 'iconoir-react';
+import { CodeBracketsSquare, Css3, Html5 } from 'iconoir-react';
 import Image from 'next/image';
 
 

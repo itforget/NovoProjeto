@@ -32,7 +32,7 @@ export default function Sobre() {
         {mostrarPrimeiroTexto ? texto1 : texto2}
         </h1>
         <div className='flex flex-row gap-8 md:justify-center'>
-          <a href='#'>
+          <a href='https://www.instagram.com/_italocds/' target='_blank'>
             <Image className='w-[70px]  md:w-10 mt-4 hover:animate-ping' src={IconInstagram} />
           </a>
           <a href='https://github.com/itforget'target='_blank'>
