@@ -26,7 +26,7 @@ export default function Sobre() {
   return (
     <div className='box-border'>
       <Nav toggleTexto={alternarTexto}/>
-      <div className="flex flex-col flex-wrap justify-center place-content-center bg-[#1A533F]  my-2 mx-16 p-5 rounded-[120px]">
+      <div className="flex flex-col flex-wrap justify-center place-content-center bg-[#1A533F]  my-2 mx-16 p-5 rounded-[120px] animate-fade-up animate-once">
         <Image className='w-[50px] animate-bounce' src={Arrow} />
         <h1 className=' text-[#96a7a4] text-[100px] md:text-5xl md:tracking-wide md:leading-[80px] md:text-center'>
         {mostrarPrimeiroTexto ? texto1 : texto2}

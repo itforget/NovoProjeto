@@ -24,7 +24,8 @@
     "react-dom": "^18",
     "react-router-dom": "^6.20.1",
     "sharp": "^0.33.0",
-    "styled-icons": "^10.47.0"
+    "styled-icons": "^10.47.0",
+    "tailwindcss-animated": "^1.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
