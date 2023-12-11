@@ -28,18 +28,18 @@ export default function Sobre() {
       <Nav toggleTexto={alternarTexto}/>
       <div className="flex flex-col flex-wrap justify-center place-content-center bg-[#1A533F]  my-2 mx-16 p-5 rounded-[120px] animate-fade-up animate-once">
         <Image className='w-[50px] animate-bounce' src={Arrow} />
-        <h1 className=' text-[#96a7a4] text-[100px] md:text-5xl md:tracking-wide md:leading-[80px] md:text-center'>
+        <h1 className=' text-[#96a7a4] text-[100px] md:text-5xl md:tracking-wide md:leading-[80px] md:text-center animate-fade-up animate-once animate-duration-[3000ms] animate-delay-300'>
         {mostrarPrimeiroTexto ? texto1 : texto2}
         </h1>
-        <div className='flex flex-row gap-8 md:justify-center'>
+        <div className='flex flex-row gap-8 md:justify-center animate-fade-up animate-once animate-duration-[3000ms] animate-delay-300'>
           <a href='https://www.instagram.com/_italocds/' target='_blank'>
-            <Image className='w-[70px]  md:w-10 mt-4 hover:animate-ping' src={IconInstagram} />
+            <Image className='w-[70px]  md:w-10 mt-4 hover:animate-shake animate-alternate' src={IconInstagram} />
           </a>
           <a href='https://github.com/itforget'target='_blank'>
-            <Image className='w-[70px]  md:w-10 mt-4 hover:animate-ping' src={IconGithub} />
+            <Image className='w-[70px]  md:w-10 mt-4 hover:animate-shake animate-alternate' src={IconGithub} />
           </a>
           <a href='https://www.linkedin.com/in/%C3%ADtalo-cordeiro-238a4a21a/' target='_blank'>
-            <Image className='w-[70px] md:w-10 mt-4 hover:animate-ping' src={IconLinkedin} />
+            <Image className='w-[70px] md:w-10 mt-4 hover:animate-shake animate-alternate' src={IconLinkedin} />
           </a>
         </div>
       </div>

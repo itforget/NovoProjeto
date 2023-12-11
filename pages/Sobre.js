@@ -22,8 +22,8 @@ export default function Sobre() {
     <div>
       <Nav toggleTexto={alternarTexto}/>
       <div className="flex flex-wrap justify-center place-content-center bg-[#1A533F]  my-2 mx-16 p-5 rounded-[120px] animate-fade-up animate-once">
-        <div className='bg-[#062C26] flex flex-wrap flex-col p-8 rounded-3xl text-[#96a7a4] font-bold text-xl gap-10'>
-          <div className='text-5xl my-5 flex justify-center'>
+        <div className='bg-[#062C26] flex flex-wrap flex-col p-8 rounded-3xl text-[#96a7a4] font-bold text-xl gap-10 animate-fade-up animate-once animate-duration-[3000ms] animate-delay-300'>
+          <div className='text-5xl my-5 flex justify-center animate-fade-up animate-once animate-duration-[3000ms] animate-delay-300'>
             <h1>{mostrarPrimeiroTexto ? text[0] : text[1]}</h1>
           </div>
           <div className='flex flex-row gap-44'>  
