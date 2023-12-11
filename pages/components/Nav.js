@@ -20,7 +20,7 @@ export default function Nav({ toggleTexto }) {
           <Image className='w-[120px] ml-6' src={Logo} alt='logo' />
         </Link>
       </div>
-      <div className='flex flex-wrap items-center gap-[80px] text-lg font-bold text-[#96a7a4] mr-[80px]'>
+      <div className='flex flex-wrap items-center gap-[80px] text-lg font-bold text-[#96a7a4] mr-[80px] md:place-content-center md:ml-8'>
         <div className='border-[#96a7a4] border-2 rounded-xl p-2 text-[#96a7a4] flex gap-2 ml-[50px]  '>
           <span>PT-BR</span>
           <label className="switch">
