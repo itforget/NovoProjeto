@@ -3,7 +3,7 @@ import Nav from './components/Nav'
 import Image from 'next/image';
 import { Html } from 'styled-icons/crypto';
 import { Css } from 'styled-icons/material';
-import { Css3, Html5, ReactLogo } from 'styled-icons/boxicons-logos';
+import { Css3, Html5, ReactLogo, TailwindCss } from 'styled-icons/boxicons-logos';
 import { LogoJavascript } from 'styled-icons/ionicons-solid';
 import { Nextdotjs } from 'styled-icons/simple-icons';
 
@@ -39,6 +39,7 @@ export default function Sobre() {
               <span className='flex flex-row gap-3'><LogoJavascript size='30' /> JavaScript</span>
               <span className='flex flex-row gap-3'><ReactLogo size='30'/> React</span>
               <span className='flex flex-row gap-3'><Nextdotjs size='30'/> NextJS</span>
+              <span className='flex flex-row gap-3'><TailwindCss size='30'/> TailWind</span>
             </div>
             <div className='bg-slate-900 flex flex-col px-16 py-3 rounded-3xl'>
             <h2 className='text-3xl'>HOBBIES</h2>
