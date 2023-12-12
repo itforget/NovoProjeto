@@ -28,7 +28,7 @@ const getVariants = (transition) => {
  }
 };
 
-export default function SlidingPage({ children, transition = 'slide' }) {
+export default function slidingPage({ children, transition = 'slide' }) {
  const variants = getVariants(transition);
 
  return (
