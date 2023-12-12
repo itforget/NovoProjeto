@@ -31,30 +31,30 @@ export default function Sobre() {
             <a href='https://github.com/itforget/PortifolioFinal' target='_blank'>
             <div className='bg-slate-900 flex flex-col justify-center place-content-center px-5 py-5 rounded-3xl hover:opacity-50 '>
               <h2 className='flex justify-center mb-2'>{mostrarPrimeiroTexto ? text[2] : text[3]}</h2>
-              <Image className='w-60 flex justify-center' priority={true} src={Portifolio}/>
+              <Image className='w-60 flex justify-center border-2 rounded-xl' priority={true} src={Portifolio}/>
             </div>
             </a>
             <a href='https://github.com/itforget/CalculadoraDeImposto' target='_blank'>
             <div className='bg-slate-900 flex flex-col justify-center place-content-center px-5 py-5 rounded-3xl hover:opacity-50'>
               <h2 className='flex justify-center mb-2'>{mostrarPrimeiroTexto ? text[4] : text[5]}</h2>
-              <Image className='w-60 flex justify-center' priority={true} src={Calculadora} />
+              <Image className='w-60 flex justify-center border-2 rounded-xl' priority={true} src={Calculadora} />
             </div>
             </a>
             <div className='bg-slate-900 flex flex-col justify-center place-content-center px-5 py-5 rounded-3xl hover:opacity-50'>
               <h2 className='flex justify-center mb-2'>EM CONSTRUÇÃO</h2>
-              <Image className='w-60 flex justify-center' priority={true}  src={Place}/>
+              <Image className='w-60 flex justify-center border-2 rounded-xl' priority={true}  src={Place}/>
             </div>
             <div className='bg-slate-900 flex flex-col justify-center place-content-center px-5 py-5 rounded-3xl'>
               <h2 className='flex justify-center mb-2'>EM CONSTRUÇÃO</h2>
-              <Image className='w-60 flex justify-center' priority={true}  src={Place}/>
+              <Image className='w-60 flex justify-center border-2 rounded-xl' priority={true}  src={Place}/>
             </div>
             <div className='bg-slate-900 flex flex-col justify-center place-content-center px-5 py-5 rounded-3xl'>
               <h2 className='flex justify-center mb-2'>EM CONSTRUÇÃO</h2>
-              <Image className='w-60 flex justify-center' priority={true}  src={Place}/>
+              <Image className='w-60 flex justify-center border-2 rounded-xl' priority={true}  src={Place}/>
             </div>
             <div className='bg-slate-900 flex flex-col justify-center place-content-center px-5 py-5 rounded-3xl'>
               <h2 className='flex justify-center mb-2'>EM CONSTRUÇÃO</h2>
-              <Image className='w-60 flex justify-center' priority={true}   src={Place}/>
+              <Image className='w-60 flex justify-center border-2 rounded-xl' priority={true}   src={Place}/>
             </div>
           </div>
         </div>
