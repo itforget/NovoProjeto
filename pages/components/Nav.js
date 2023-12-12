@@ -17,11 +17,11 @@ export default function Nav({ toggleTexto }) {
     <div className='bg-[#062C26] flex flex-wrap items-center justify-between md:justify-center'>
       <div className='animate-pulse'>
         <Link href='/'>
-          <Image className='w-[120px] ml-6'priority={true} src={Logo} alt='logo' />
+          <Image className='w-[120px] ml-6 md:ml-0'priority={true} src={Logo} alt='logo' />
         </Link>
       </div>
-      <div className='flex flex-wrap items-center gap-[80px] text-lg font-bold text-[#96a7a4] mr-[80px] md:place-content-center md:ml-8'>
-        <div className='border-[#96a7a4] border-2 rounded-xl p-2 text-[#96a7a4] flex gap-2 ml-[50px]  '>
+      <div className='flex flex-wrap items-center gap-[80px] text-lg font-bold text-[#96a7a4] mr-[80px] md:place-content-center '>
+        <div className='border-[#96a7a4] border-2 rounded-xl p-2 text-[#96a7a4] flex gap-2 ml-[50px] md:ml-[60px] '>
           <span>PT-BR</span>
           <label className="switch">
             <input type="checkbox" value="Alternar Texto" onClick={alternarTexto} />
@@ -29,7 +29,7 @@ export default function Nav({ toggleTexto }) {
           </label>
           <span>ENG</span>
         </div>
-        <div className='flex gap-5 ml-[50px] '>
+        <div className='flex gap-5 ml-[50px] md:text-sm md:ml-[80px]'>
           <Link href='/Sobre' className='hover:opacity-50 border-[#96a7a4] border-2 rounded-xl p-2 text-[#96a7a4]'>
             {mostrarPrimeiroTexto ? textos[0] : textos[1]}
           </Link>
