@@ -4,10 +4,11 @@ This is a Project made by ÍTALO C.
 
 ```bash
 REACT
-# or
+####
 NEXTJS
-# or
+####
 TAILWIND
+####
 ```
 
 
