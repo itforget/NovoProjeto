@@ -4,12 +4,6 @@ import { Css3, Html5, ReactLogo, TailwindCss } from 'styled-icons/boxicons-logos
 import { LogoJavascript } from 'styled-icons/ionicons-solid';
 import { Nextdotjs } from 'styled-icons/simple-icons';
 import SlidingPage from './components/SlidingPage';
-import {  Silkscreen } from 'next/font/google'
-
-const silkscreen = Silkscreen({ 
-  weight: ['400','700'],
-  subsets: ['latin'] })
-
 
 export default function Sobre() {
   const [mostrarPrimeiroTexto, setMostrarPrimeiroTexto] = useState(true);
@@ -23,7 +17,7 @@ export default function Sobre() {
   return (
     <SlidingPage transition='scale'>
 
-    <div className={`${silkscreen.className}`}>
+    <div>
       <Nav toggleTexto={alternarTexto}/>
       <div className="flex flex-wrap justify-center place-content-center bg-[#1A533F]  my-2 mx-16 p-5 rounded-[120px] animate-fade-up animate-once">
         <div className='bg-[#062C26] flex flex-wrap flex-col p-8 rounded-3xl text-[#96a7a4] font-bold text-xl gap-10 animate-fade-up animate-once animate-duration-[3000ms] animate-delay-300'>

@@ -6,11 +6,6 @@ import Computer from '/public/images/computer.png';
 import React, { useState } from 'react';
 import Nav from './components/Nav'
 import SlidingPage from './components/SlidingPage';
-import {  Silkscreen } from 'next/font/google'
-
-const silkscreen = Silkscreen({ 
-  weight: ['400','700'],
-  subsets: ['latin'] })
 
 export default function Sobre() {
   const [mostrarPrimeiroTexto, setMostrarPrimeiroTexto] = useState(true);
@@ -31,7 +26,7 @@ export default function Sobre() {
   };
   return (
     <SlidingPage transition='scale'>
-    <div className={`${silkscreen.className}`}>
+    <div>
       <Nav toggleTexto={alternarTexto}/>
       <div className="flex flex-col flex-wrap justify-center place-content-center bg-[#1A533F]  my-2 mx-16 p-5 rounded-[120px] animate-fade-up animate-once">
         <Image className='w-[50px] animate-bounce' priority={false} src={Computer} />
