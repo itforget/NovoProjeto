@@ -2,11 +2,15 @@ import Image from 'next/image';
 import IconInstagram from '/public/images/instagram.png';
 import IconGithub from '/public/images/github.png';
 import IconLinkedin from '/public/images/linkedin.png';
-import Arrow from '/public/images/computer.png';
+import Computer from '/public/images/computer.png';
 import React, { useState } from 'react';
 import Nav from './components/Nav'
 import SlidingPage from './components/SlidingPage';
+import {  Silkscreen } from 'next/font/google'
 
+const silkscreen = Silkscreen({ 
+  weight: ['400','700'],
+  subsets: ['latin'] })
 
 export default function Sobre() {
   const [mostrarPrimeiroTexto, setMostrarPrimeiroTexto] = useState(true);
@@ -27,22 +31,22 @@ export default function Sobre() {
   };
   return (
     <SlidingPage transition='scale'>
-    <div className='box-border'>
+    <div className={`${silkscreen.className}`}>
       <Nav toggleTexto={alternarTexto}/>
       <div className="flex flex-col flex-wrap justify-center place-content-center bg-[#1A533F]  my-2 mx-16 p-5 rounded-[120px] animate-fade-up animate-once">
-        <Image className='w-[50px] animate-bounce' src={Arrow} />
-        <h1 className=' text-[#96a7a4] text-[100px] md:text-5xl md:tracking-wide md:leading-[80px] md:text-center animate-fade-up animate-once animate-duration-[3000ms] animate-delay-300'>
+        <Image className='w-[50px] animate-bounce' priority={false} src={Computer} />
+        <h1 className=' text-[#96a7a4] text-[90px]  md:text-5xl md:tracking-wide md:leading-[80px] md:text-center animate-fade-up animate-once animate-duration-[3000ms] animate-delay-300'>
         {mostrarPrimeiroTexto ? texto1 : texto2}
         </h1>
-        <div className='flex flex-row gap-8 md:justify-center animate-fade-up animate-once animate-duration-[3000ms] animate-delay-300'>
+        <div className='flex flex-row gap-8 ml-20 md:justify-center animate-fade-up animate-once animate-duration-[3000ms] animate-delay-300'>
           <a href='https://www.instagram.com/_italocds/' target='_blank'>
-            <Image className='w-[70px]  md:w-10 mt-4 hover:animate-shake animate-alternate' src={IconInstagram} />
+            <Image className='w-[70px]  md:w-10 mt-4 hover:animate-shake animate-alternate'priority={true} src={IconInstagram} />
           </a>
           <a href='https://github.com/itforget'target='_blank'>
-            <Image className='w-[70px]  md:w-10 mt-4 hover:animate-shake animate-alternate' src={IconGithub} />
+            <Image className='w-[70px]  md:w-10 mt-4 hover:animate-shake animate-alternate'priority={true} src={IconGithub} />
           </a>
           <a href='https://www.linkedin.com/in/%C3%ADtalo-cordeiro-238a4a21a/' target='_blank'>
-            <Image className='w-[70px] md:w-10 mt-4 hover:animate-shake animate-alternate' src={IconLinkedin} />
+            <Image className='w-[70px] md:w-10 mt-4 hover:animate-shake animate-alternate' priority={true} src={IconLinkedin} />
           </a>
         </div>
       </div>

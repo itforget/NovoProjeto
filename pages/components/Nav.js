@@ -17,7 +17,7 @@ export default function Nav({ toggleTexto }) {
     <div className='bg-[#062C26] flex flex-wrap items-center justify-between md:justify-center'>
       <div className='animate-pulse'>
         <Link href='/'>
-          <Image className='w-[120px] ml-6' src={Logo} alt='logo' />
+          <Image className='w-[120px] ml-6'priority={true} src={Logo} alt='logo' />
         </Link>
       </div>
       <div className='flex flex-wrap items-center gap-[80px] text-lg font-bold text-[#96a7a4] mr-[80px] md:place-content-center md:ml-8'>
