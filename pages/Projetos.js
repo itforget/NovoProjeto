@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Portifolio from '@/public/images/TELA PROJETO.PNG'
 import Calculadora from '@/public/images/TELA.PNG'
 import Place from '@/public/images/place.png'
+import SlidingPage from './components/SlidingPage';
 
 export default function Sobre() {
   const [mostrarPrimeiroTexto, setMostrarPrimeiroTexto] = useState(true);
@@ -11,6 +12,8 @@ export default function Sobre() {
     setMostrarPrimeiroTexto(!mostrarPrimeiroTexto);
   };
   return (
+    <SlidingPage transition='scale'>
+
     <div>
         <Nav toggleTexto={alternarTexto}/>
         <div className="flex flex-wrap justify-center place-content-center bg-[#1A533F]  my-2 mx-16 rounded-[120px] animate-fade-up animate-once ">
@@ -51,5 +54,6 @@ export default function Sobre() {
         </div>
       </div>
     </div>
+    </SlidingPage>
   );
 }

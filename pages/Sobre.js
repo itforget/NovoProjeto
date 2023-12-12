@@ -6,6 +6,7 @@ import { Css } from 'styled-icons/material';
 import { Css3, Html5, ReactLogo, TailwindCss } from 'styled-icons/boxicons-logos';
 import { LogoJavascript } from 'styled-icons/ionicons-solid';
 import { Nextdotjs } from 'styled-icons/simple-icons';
+import SlidingPage from './components/SlidingPage';
 
 
 
@@ -19,6 +20,8 @@ export default function Sobre() {
     setMostrarPrimeiroTexto(!mostrarPrimeiroTexto);
   };
   return (
+    <SlidingPage transition='scale'>
+
     <div>
       <Nav toggleTexto={alternarTexto}/>
       <div className="flex flex-wrap justify-center place-content-center bg-[#1A533F]  my-2 mx-16 p-5 rounded-[120px] animate-fade-up animate-once">
@@ -50,6 +53,7 @@ export default function Sobre() {
         </div>
       </div>
     </div>
+    </SlidingPage>
       
   );
 }

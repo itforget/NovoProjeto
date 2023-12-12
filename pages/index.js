@@ -5,6 +5,8 @@ import IconLinkedin from '/public/images/linkedin.png';
 import Arrow from '/public/images/computer.png';
 import React, { useState } from 'react';
 import Nav from './components/Nav'
+import SlidingPage from './components/SlidingPage';
+
 
 export default function Sobre() {
   const [mostrarPrimeiroTexto, setMostrarPrimeiroTexto] = useState(true);
@@ -24,6 +26,7 @@ export default function Sobre() {
     setMostrarPrimeiroTexto(!mostrarPrimeiroTexto);
   };
   return (
+    <SlidingPage transition='scale'>
     <div className='box-border'>
       <Nav toggleTexto={alternarTexto}/>
       <div className="flex flex-col flex-wrap justify-center place-content-center bg-[#1A533F]  my-2 mx-16 p-5 rounded-[120px] animate-fade-up animate-once">
@@ -44,5 +47,6 @@ export default function Sobre() {
         </div>
       </div>
     </div>
+    </SlidingPage>
   );
 }
